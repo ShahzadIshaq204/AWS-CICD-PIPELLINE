@@ -1,6 +1,10 @@
 version: 0.0
 os: linux
+on:
+  push:
+    branches:
+      - main
 files:
-  - source: /app
-    destination: /var/www/html/
+  - source: /
+    destination: /var/www/html/3dRenders2023/
 
