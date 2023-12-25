@@ -1,0 +1,925 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?20d5335ad4184e353fdd0b39531d39fa") format("truetype"),
+url("./flaticon.woff?20d5335ad4184e353fdd0b39531d39fa") format("woff"),
+url("./flaticon.woff2?20d5335ad4184e353fdd0b39531d39fa") format("woff2"),
+url("./flaticon.eot?20d5335ad4184e353fdd0b39531d39fa#iefix") format("embedded-opentype"),
+url("./flaticon.svg?20d5335ad4184e353fdd0b39531d39fa#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "lung-cancer": "\f101",
+    "brain": "\f102",
+    "ribbon": "\f103",
+    "virus": "\f104",
+    "cancer": "\f105",
+    "care": "\f106",
+    "block-user": "\f107",
+    "gantt-chart": "\f108",
+    "configuration": "\f109",
+    "presentation": "\f10a",
+    "testing": "\f10b",
+    "line-chart": "\f10c",
+    "money": "\f10d",
+    "savings": "\f10e",
+    "goal": "\f10f",
+    "email": "\f110",
+    "price-tag": "\f111",
+    "user": "\f112",
+    "briefcase": "\f113",
+    "search": "\f114",
+    "document": "\f115",
+    "business-strategy": "\f116",
+    "calendar": "\f117",
+    "office": "\f118",
+    "idea": "\f119",
+    "tree-structure": "\f11a",
+    "mail": "\f11b",
+    "statistics": "\f11c",
+    "exchange": "\f11d",
+    "percentage": "\f11e",
+    "salary": "\f11f",
+    "add-reminder": "\f120",
+    "tasks": "\f121",
+    "percentage-1": "\f122",
+    "video-marketing": "\f123",
+    "settings": "\f124",
+    "profit": "\f125",
+    "management": "\f126",
+    "form": "\f127",
+    "talk-show": "\f128",
+    "contact-book": "\f129",
+    "alert": "\f12a",
+    "branching": "\f12b",
+    "options": "\f12c",
+    "searching": "\f12d",
+    "businessman": "\f12e",
+    "incoming-message": "\f12f",
+    "target": "\f130",
+    "mail-1": "\f131",
+    "chat": "\f132",
+    "planning": "\f133",
+    "keyword": "\f134",
+    "growth": "\f135",
+    "audit": "\f136",
+    "laptop": "\f137",
+    "time-management": "\f138",
+    "histogram": "\f139",
+    "controlling-card": "\f13a",
+    "checked": "\f13b",
+    "content-marketing": "\f13c",
+    "user-1": "\f13d",
+    "settings-1": "\f13e",
+    "idea-1": "\f13f",
+    "browser": "\f140",
+    "mobile-analytics": "\f141",
+    "check": "\f142",
+    "growth-1": "\f143",
+    "arrow": "\f144",
+    "loupe": "\f145",
+    "intestine": "\f146",
+    "high-temperature": "\f147",
+    "vaccine": "\f148",
+    "hand": "\f149",
+    "virus-1": "\f14a",
+    "cough": "\f14b",
+    "eye": "\f14c",
+    "test": "\f14d",
+    "virus-transmission": "\f14e",
+    "virus-2": "\f14f",
+    "virus-3": "\f150",
+    "medical-mask": "\f151",
+    "medical-mask-1": "\f152",
+    "home": "\f153",
+    "telephone": "\f154",
+    "online-learning": "\f155",
+    "camera": "\f156",
+    "stayhome": "\f157",
+    "image": "\f158",
+    "waiting": "\f159",
+    "clock": "\f15a",
+    "lock": "\f15b",
+    "maps": "\f15c",
+    "weighing-scale": "\f15d",
+    "notes": "\f15e",
+    "stethoscope": "\f15f",
+    "house": "\f160",
+    "band-aid": "\f161",
+    "news": "\f162",
+    "mortar": "\f163",
+    "web-browser": "\f164",
+    "first-aid-kit": "\f165",
+    "books": "\f166",
+    "tooth": "\f167",
+    "settings-2": "\f168",
+    "dumbbell": "\f169",
+    "find-my-gadget-app": "\f16a",
+    "ambulance": "\f16b",
+    "shortcut-script-app": "\f16c",
+    "blood-bag": "\f16d",
+    "translate": "\f16e",
+    "thermometer": "\f16f",
+    "contacts": "\f170",
+    "blood-test": "\f171",
+    "youtube": "\f172",
+    "stretcher": "\f173",
+    "pin": "\f174",
+    "healthy-food": "\f175",
+    "messenger": "\f176",
+    "crutch": "\f177",
+    "telegram": "\f178",
+    "lungs": "\f179",
+    "bone": "\f17a",
+    "eye-dropper": "\f17b",
+    "vaccine-1": "\f17c",
+    "ecg": "\f17d",
+    "mouthwash": "\f17e",
+    "time-to-eat": "\f17f",
+    "antiseptic": "\f180",
+    "toothpaste": "\f181",
+    "eye-test": "\f182",
+    "hair": "\f183",
+    "brain-1": "\f184",
+    "pills": "\f185",
+    "no-smoking": "\f186",
+    "medical-history": "\f187",
+    "no-fast-food": "\f188",
+    "kidneys": "\f189",
+    "nasal-spray": "\f18a",
+    "sperm": "\f18b",
+    "ear": "\f18c",
+    "blood-pressure": "\f18d",
+    "hospital": "\f18e",
+    "bladder": "\f18f",
+    "contact-lens": "\f190",
+    "ampoule": "\f191",
+    "surgery": "\f192",
+    "dna": "\f193",
+    "wheelchair": "\f194",
+    "eye-dropper-1": "\f195",
+    "broken-leg": "\f196",
+    "genders": "\f197",
+    "syrup": "\f198",
+    "stomach": "\f199",
+    "time-to-sleep": "\f19a",
+    "face-mask": "\f19b",
+    "x-ray": "\f19c",
+    "mail-inbox-app": "\f19d",
+    "speech-bubble": "\f19e",
+    "doc-file": "\f19f",
+    "jpg-file": "\f1a0",
+    "ppt": "\f1a1",
+    "pdf-file": "\f1a2",
+    "exe-file": "\f1a3",
+    "mp4-file": "\f1a4",
+    "xls": "\f1a5",
+    "search-1": "\f1a6",
+    "video-file": "\f1a7",
+    "upload": "\f1a8",
+    "check-1": "\f1a9",
+    "edit-file": "\f1aa",
+    "link-file": "\f1ab",
+    "blog": "\f1ac",
+    "home-1": "\f1ad",
+    "agenda": "\f1ae",
+    "paper-plane": "\f1af",
+    "add-user": "\f1b0",
+    "remove-user": "\f1b1",
+    "cloud": "\f1b2",
+    "delete": "\f1b3",
+    "test-tube": "\f1b4",
+    "petri-dish": "\f1b5",
+    "flask": "\f1b6",
+    "weight": "\f1b7",
+    "gloves": "\f1b8",
+    "molecule": "\f1b9",
+    "biohazard": "\f1ba",
+    "flask-1": "\f1bb",
+    "flask-2": "\f1bc",
+    "test-tube-1": "\f1bd",
+    "microscope": "\f1be",
+    "bunsen-burner": "\f1bf",
+    "control-panel": "\f1c0",
+    "eye-1": "\f1c1",
+    "home-page": "\f1c2",
+    "log-out": "\f1c3",
+    "log-in": "\f1c4",
+    "chat-1": "\f1c5",
+    "dashboard": "\f1c6",
+    "placeholder": "\f1c7",
+    "layers": "\f1c8",
+    "seo-tag": "\f1c9",
+    "notification": "\f1ca",
+    "chat-2": "\f1cb",
+    "add-user-1": "\f1cc",
+    "social-network": "\f1cd",
+    "social-network-1": "\f1ce",
+    "message": "\f1cf",
+    "profile": "\f1d0",
+    "north": "\f1d1",
+    "notification-1": "\f1d2",
+    "summer": "\f1d3",
+    "comments": "\f1d4",
+    "edit": "\f1d5",
+    "notification-2": "\f1d6",
+    "certificate": "\f1d7",
+    "badge": "\f1d8",
+    "side": "\f1d9",
+    "lightning": "\f1da",
+    "milk": "\f1db",
+    "dressing": "\f1dc",
+    "computer-screen": "\f1dd",
+    "stayhome-1": "\f1de",
+    "observation": "\f1df",
+    "stayhome-2": "\f1e0",
+    "stayhome-3": "\f1e1",
+);
+
+.flaticon-lung-cancer:before {
+    content: map-get($flaticon-map, "lung-cancer");
+}
+.flaticon-brain:before {
+    content: map-get($flaticon-map, "brain");
+}
+.flaticon-ribbon:before {
+    content: map-get($flaticon-map, "ribbon");
+}
+.flaticon-virus:before {
+    content: map-get($flaticon-map, "virus");
+}
+.flaticon-cancer:before {
+    content: map-get($flaticon-map, "cancer");
+}
+.flaticon-care:before {
+    content: map-get($flaticon-map, "care");
+}
+.flaticon-block-user:before {
+    content: map-get($flaticon-map, "block-user");
+}
+.flaticon-gantt-chart:before {
+    content: map-get($flaticon-map, "gantt-chart");
+}
+.flaticon-configuration:before {
+    content: map-get($flaticon-map, "configuration");
+}
+.flaticon-presentation:before {
+    content: map-get($flaticon-map, "presentation");
+}
+.flaticon-testing:before {
+    content: map-get($flaticon-map, "testing");
+}
+.flaticon-line-chart:before {
+    content: map-get($flaticon-map, "line-chart");
+}
+.flaticon-money:before {
+    content: map-get($flaticon-map, "money");
+}
+.flaticon-savings:before {
+    content: map-get($flaticon-map, "savings");
+}
+.flaticon-goal:before {
+    content: map-get($flaticon-map, "goal");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-price-tag:before {
+    content: map-get($flaticon-map, "price-tag");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon-map, "briefcase");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-document:before {
+    content: map-get($flaticon-map, "document");
+}
+.flaticon-business-strategy:before {
+    content: map-get($flaticon-map, "business-strategy");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-office:before {
+    content: map-get($flaticon-map, "office");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
+.flaticon-tree-structure:before {
+    content: map-get($flaticon-map, "tree-structure");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-statistics:before {
+    content: map-get($flaticon-map, "statistics");
+}
+.flaticon-exchange:before {
+    content: map-get($flaticon-map, "exchange");
+}
+.flaticon-percentage:before {
+    content: map-get($flaticon-map, "percentage");
+}
+.flaticon-salary:before {
+    content: map-get($flaticon-map, "salary");
+}
+.flaticon-add-reminder:before {
+    content: map-get($flaticon-map, "add-reminder");
+}
+.flaticon-tasks:before {
+    content: map-get($flaticon-map, "tasks");
+}
+.flaticon-percentage-1:before {
+    content: map-get($flaticon-map, "percentage-1");
+}
+.flaticon-video-marketing:before {
+    content: map-get($flaticon-map, "video-marketing");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-profit:before {
+    content: map-get($flaticon-map, "profit");
+}
+.flaticon-management:before {
+    content: map-get($flaticon-map, "management");
+}
+.flaticon-form:before {
+    content: map-get($flaticon-map, "form");
+}
+.flaticon-talk-show:before {
+    content: map-get($flaticon-map, "talk-show");
+}
+.flaticon-contact-book:before {
+    content: map-get($flaticon-map, "contact-book");
+}
+.flaticon-alert:before {
+    content: map-get($flaticon-map, "alert");
+}
+.flaticon-branching:before {
+    content: map-get($flaticon-map, "branching");
+}
+.flaticon-options:before {
+    content: map-get($flaticon-map, "options");
+}
+.flaticon-searching:before {
+    content: map-get($flaticon-map, "searching");
+}
+.flaticon-businessman:before {
+    content: map-get($flaticon-map, "businessman");
+}
+.flaticon-incoming-message:before {
+    content: map-get($flaticon-map, "incoming-message");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-mail-1:before {
+    content: map-get($flaticon-map, "mail-1");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-planning:before {
+    content: map-get($flaticon-map, "planning");
+}
+.flaticon-keyword:before {
+    content: map-get($flaticon-map, "keyword");
+}
+.flaticon-growth:before {
+    content: map-get($flaticon-map, "growth");
+}
+.flaticon-audit:before {
+    content: map-get($flaticon-map, "audit");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon-map, "laptop");
+}
+.flaticon-time-management:before {
+    content: map-get($flaticon-map, "time-management");
+}
+.flaticon-histogram:before {
+    content: map-get($flaticon-map, "histogram");
+}
+.flaticon-controlling-card:before {
+    content: map-get($flaticon-map, "controlling-card");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-content-marketing:before {
+    content: map-get($flaticon-map, "content-marketing");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-settings-1:before {
+    content: map-get($flaticon-map, "settings-1");
+}
+.flaticon-idea-1:before {
+    content: map-get($flaticon-map, "idea-1");
+}
+.flaticon-browser:before {
+    content: map-get($flaticon-map, "browser");
+}
+.flaticon-mobile-analytics:before {
+    content: map-get($flaticon-map, "mobile-analytics");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-growth-1:before {
+    content: map-get($flaticon-map, "growth-1");
+}
+.flaticon-arrow:before {
+    content: map-get($flaticon-map, "arrow");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-intestine:before {
+    content: map-get($flaticon-map, "intestine");
+}
+.flaticon-high-temperature:before {
+    content: map-get($flaticon-map, "high-temperature");
+}
+.flaticon-vaccine:before {
+    content: map-get($flaticon-map, "vaccine");
+}
+.flaticon-hand:before {
+    content: map-get($flaticon-map, "hand");
+}
+.flaticon-virus-1:before {
+    content: map-get($flaticon-map, "virus-1");
+}
+.flaticon-cough:before {
+    content: map-get($flaticon-map, "cough");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-test:before {
+    content: map-get($flaticon-map, "test");
+}
+.flaticon-virus-transmission:before {
+    content: map-get($flaticon-map, "virus-transmission");
+}
+.flaticon-virus-2:before {
+    content: map-get($flaticon-map, "virus-2");
+}
+.flaticon-virus-3:before {
+    content: map-get($flaticon-map, "virus-3");
+}
+.flaticon-medical-mask:before {
+    content: map-get($flaticon-map, "medical-mask");
+}
+.flaticon-medical-mask-1:before {
+    content: map-get($flaticon-map, "medical-mask-1");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-online-learning:before {
+    content: map-get($flaticon-map, "online-learning");
+}
+.flaticon-camera:before {
+    content: map-get($flaticon-map, "camera");
+}
+.flaticon-stayhome:before {
+    content: map-get($flaticon-map, "stayhome");
+}
+.flaticon-image:before {
+    content: map-get($flaticon-map, "image");
+}
+.flaticon-waiting:before {
+    content: map-get($flaticon-map, "waiting");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-lock:before {
+    content: map-get($flaticon-map, "lock");
+}
+.flaticon-maps:before {
+    content: map-get($flaticon-map, "maps");
+}
+.flaticon-weighing-scale:before {
+    content: map-get($flaticon-map, "weighing-scale");
+}
+.flaticon-notes:before {
+    content: map-get($flaticon-map, "notes");
+}
+.flaticon-stethoscope:before {
+    content: map-get($flaticon-map, "stethoscope");
+}
+.flaticon-house:before {
+    content: map-get($flaticon-map, "house");
+}
+.flaticon-band-aid:before {
+    content: map-get($flaticon-map, "band-aid");
+}
+.flaticon-news:before {
+    content: map-get($flaticon-map, "news");
+}
+.flaticon-mortar:before {
+    content: map-get($flaticon-map, "mortar");
+}
+.flaticon-web-browser:before {
+    content: map-get($flaticon-map, "web-browser");
+}
+.flaticon-first-aid-kit:before {
+    content: map-get($flaticon-map, "first-aid-kit");
+}
+.flaticon-books:before {
+    content: map-get($flaticon-map, "books");
+}
+.flaticon-tooth:before {
+    content: map-get($flaticon-map, "tooth");
+}
+.flaticon-settings-2:before {
+    content: map-get($flaticon-map, "settings-2");
+}
+.flaticon-dumbbell:before {
+    content: map-get($flaticon-map, "dumbbell");
+}
+.flaticon-find-my-gadget-app:before {
+    content: map-get($flaticon-map, "find-my-gadget-app");
+}
+.flaticon-ambulance:before {
+    content: map-get($flaticon-map, "ambulance");
+}
+.flaticon-shortcut-script-app:before {
+    content: map-get($flaticon-map, "shortcut-script-app");
+}
+.flaticon-blood-bag:before {
+    content: map-get($flaticon-map, "blood-bag");
+}
+.flaticon-translate:before {
+    content: map-get($flaticon-map, "translate");
+}
+.flaticon-thermometer:before {
+    content: map-get($flaticon-map, "thermometer");
+}
+.flaticon-contacts:before {
+    content: map-get($flaticon-map, "contacts");
+}
+.flaticon-blood-test:before {
+    content: map-get($flaticon-map, "blood-test");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
+.flaticon-stretcher:before {
+    content: map-get($flaticon-map, "stretcher");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-healthy-food:before {
+    content: map-get($flaticon-map, "healthy-food");
+}
+.flaticon-messenger:before {
+    content: map-get($flaticon-map, "messenger");
+}
+.flaticon-crutch:before {
+    content: map-get($flaticon-map, "crutch");
+}
+.flaticon-telegram:before {
+    content: map-get($flaticon-map, "telegram");
+}
+.flaticon-lungs:before {
+    content: map-get($flaticon-map, "lungs");
+}
+.flaticon-bone:before {
+    content: map-get($flaticon-map, "bone");
+}
+.flaticon-eye-dropper:before {
+    content: map-get($flaticon-map, "eye-dropper");
+}
+.flaticon-vaccine-1:before {
+    content: map-get($flaticon-map, "vaccine-1");
+}
+.flaticon-ecg:before {
+    content: map-get($flaticon-map, "ecg");
+}
+.flaticon-mouthwash:before {
+    content: map-get($flaticon-map, "mouthwash");
+}
+.flaticon-time-to-eat:before {
+    content: map-get($flaticon-map, "time-to-eat");
+}
+.flaticon-antiseptic:before {
+    content: map-get($flaticon-map, "antiseptic");
+}
+.flaticon-toothpaste:before {
+    content: map-get($flaticon-map, "toothpaste");
+}
+.flaticon-eye-test:before {
+    content: map-get($flaticon-map, "eye-test");
+}
+.flaticon-hair:before {
+    content: map-get($flaticon-map, "hair");
+}
+.flaticon-brain-1:before {
+    content: map-get($flaticon-map, "brain-1");
+}
+.flaticon-pills:before {
+    content: map-get($flaticon-map, "pills");
+}
+.flaticon-no-smoking:before {
+    content: map-get($flaticon-map, "no-smoking");
+}
+.flaticon-medical-history:before {
+    content: map-get($flaticon-map, "medical-history");
+}
+.flaticon-no-fast-food:before {
+    content: map-get($flaticon-map, "no-fast-food");
+}
+.flaticon-kidneys:before {
+    content: map-get($flaticon-map, "kidneys");
+}
+.flaticon-nasal-spray:before {
+    content: map-get($flaticon-map, "nasal-spray");
+}
+.flaticon-sperm:before {
+    content: map-get($flaticon-map, "sperm");
+}
+.flaticon-ear:before {
+    content: map-get($flaticon-map, "ear");
+}
+.flaticon-blood-pressure:before {
+    content: map-get($flaticon-map, "blood-pressure");
+}
+.flaticon-hospital:before {
+    content: map-get($flaticon-map, "hospital");
+}
+.flaticon-bladder:before {
+    content: map-get($flaticon-map, "bladder");
+}
+.flaticon-contact-lens:before {
+    content: map-get($flaticon-map, "contact-lens");
+}
+.flaticon-ampoule:before {
+    content: map-get($flaticon-map, "ampoule");
+}
+.flaticon-surgery:before {
+    content: map-get($flaticon-map, "surgery");
+}
+.flaticon-dna:before {
+    content: map-get($flaticon-map, "dna");
+}
+.flaticon-wheelchair:before {
+    content: map-get($flaticon-map, "wheelchair");
+}
+.flaticon-eye-dropper-1:before {
+    content: map-get($flaticon-map, "eye-dropper-1");
+}
+.flaticon-broken-leg:before {
+    content: map-get($flaticon-map, "broken-leg");
+}
+.flaticon-genders:before {
+    content: map-get($flaticon-map, "genders");
+}
+.flaticon-syrup:before {
+    content: map-get($flaticon-map, "syrup");
+}
+.flaticon-stomach:before {
+    content: map-get($flaticon-map, "stomach");
+}
+.flaticon-time-to-sleep:before {
+    content: map-get($flaticon-map, "time-to-sleep");
+}
+.flaticon-face-mask:before {
+    content: map-get($flaticon-map, "face-mask");
+}
+.flaticon-x-ray:before {
+    content: map-get($flaticon-map, "x-ray");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon-map, "mail-inbox-app");
+}
+.flaticon-speech-bubble:before {
+    content: map-get($flaticon-map, "speech-bubble");
+}
+.flaticon-doc-file:before {
+    content: map-get($flaticon-map, "doc-file");
+}
+.flaticon-jpg-file:before {
+    content: map-get($flaticon-map, "jpg-file");
+}
+.flaticon-ppt:before {
+    content: map-get($flaticon-map, "ppt");
+}
+.flaticon-pdf-file:before {
+    content: map-get($flaticon-map, "pdf-file");
+}
+.flaticon-exe-file:before {
+    content: map-get($flaticon-map, "exe-file");
+}
+.flaticon-mp4-file:before {
+    content: map-get($flaticon-map, "mp4-file");
+}
+.flaticon-xls:before {
+    content: map-get($flaticon-map, "xls");
+}
+.flaticon-search-1:before {
+    content: map-get($flaticon-map, "search-1");
+}
+.flaticon-video-file:before {
+    content: map-get($flaticon-map, "video-file");
+}
+.flaticon-upload:before {
+    content: map-get($flaticon-map, "upload");
+}
+.flaticon-check-1:before {
+    content: map-get($flaticon-map, "check-1");
+}
+.flaticon-edit-file:before {
+    content: map-get($flaticon-map, "edit-file");
+}
+.flaticon-link-file:before {
+    content: map-get($flaticon-map, "link-file");
+}
+.flaticon-blog:before {
+    content: map-get($flaticon-map, "blog");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon-map, "home-1");
+}
+.flaticon-agenda:before {
+    content: map-get($flaticon-map, "agenda");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-add-user:before {
+    content: map-get($flaticon-map, "add-user");
+}
+.flaticon-remove-user:before {
+    content: map-get($flaticon-map, "remove-user");
+}
+.flaticon-cloud:before {
+    content: map-get($flaticon-map, "cloud");
+}
+.flaticon-delete:before {
+    content: map-get($flaticon-map, "delete");
+}
+.flaticon-test-tube:before {
+    content: map-get($flaticon-map, "test-tube");
+}
+.flaticon-petri-dish:before {
+    content: map-get($flaticon-map, "petri-dish");
+}
+.flaticon-flask:before {
+    content: map-get($flaticon-map, "flask");
+}
+.flaticon-weight:before {
+    content: map-get($flaticon-map, "weight");
+}
+.flaticon-gloves:before {
+    content: map-get($flaticon-map, "gloves");
+}
+.flaticon-molecule:before {
+    content: map-get($flaticon-map, "molecule");
+}
+.flaticon-biohazard:before {
+    content: map-get($flaticon-map, "biohazard");
+}
+.flaticon-flask-1:before {
+    content: map-get($flaticon-map, "flask-1");
+}
+.flaticon-flask-2:before {
+    content: map-get($flaticon-map, "flask-2");
+}
+.flaticon-test-tube-1:before {
+    content: map-get($flaticon-map, "test-tube-1");
+}
+.flaticon-microscope:before {
+    content: map-get($flaticon-map, "microscope");
+}
+.flaticon-bunsen-burner:before {
+    content: map-get($flaticon-map, "bunsen-burner");
+}
+.flaticon-control-panel:before {
+    content: map-get($flaticon-map, "control-panel");
+}
+.flaticon-eye-1:before {
+    content: map-get($flaticon-map, "eye-1");
+}
+.flaticon-home-page:before {
+    content: map-get($flaticon-map, "home-page");
+}
+.flaticon-log-out:before {
+    content: map-get($flaticon-map, "log-out");
+}
+.flaticon-log-in:before {
+    content: map-get($flaticon-map, "log-in");
+}
+.flaticon-chat-1:before {
+    content: map-get($flaticon-map, "chat-1");
+}
+.flaticon-dashboard:before {
+    content: map-get($flaticon-map, "dashboard");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-seo-tag:before {
+    content: map-get($flaticon-map, "seo-tag");
+}
+.flaticon-notification:before {
+    content: map-get($flaticon-map, "notification");
+}
+.flaticon-chat-2:before {
+    content: map-get($flaticon-map, "chat-2");
+}
+.flaticon-add-user-1:before {
+    content: map-get($flaticon-map, "add-user-1");
+}
+.flaticon-social-network:before {
+    content: map-get($flaticon-map, "social-network");
+}
+.flaticon-social-network-1:before {
+    content: map-get($flaticon-map, "social-network-1");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-profile:before {
+    content: map-get($flaticon-map, "profile");
+}
+.flaticon-north:before {
+    content: map-get($flaticon-map, "north");
+}
+.flaticon-notification-1:before {
+    content: map-get($flaticon-map, "notification-1");
+}
+.flaticon-summer:before {
+    content: map-get($flaticon-map, "summer");
+}
+.flaticon-comments:before {
+    content: map-get($flaticon-map, "comments");
+}
+.flaticon-edit:before {
+    content: map-get($flaticon-map, "edit");
+}
+.flaticon-notification-2:before {
+    content: map-get($flaticon-map, "notification-2");
+}
+.flaticon-certificate:before {
+    content: map-get($flaticon-map, "certificate");
+}
+.flaticon-badge:before {
+    content: map-get($flaticon-map, "badge");
+}
+.flaticon-side:before {
+    content: map-get($flaticon-map, "side");
+}
+.flaticon-lightning:before {
+    content: map-get($flaticon-map, "lightning");
+}
+.flaticon-milk:before {
+    content: map-get($flaticon-map, "milk");
+}
+.flaticon-dressing:before {
+    content: map-get($flaticon-map, "dressing");
+}
+.flaticon-computer-screen:before {
+    content: map-get($flaticon-map, "computer-screen");
+}
+.flaticon-stayhome-1:before {
+    content: map-get($flaticon-map, "stayhome-1");
+}
+.flaticon-observation:before {
+    content: map-get($flaticon-map, "observation");
+}
+.flaticon-stayhome-2:before {
+    content: map-get($flaticon-map, "stayhome-2");
+}
+.flaticon-stayhome-3:before {
+    content: map-get($flaticon-map, "stayhome-3");
+}
