@@ -1,0 +1,64 @@
+version: "3"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports: 
+      - "80:80"
+    networks:
+      - internal
+    volumes:
+      - ./:/var/www/html/
+      - ./logs/nginx:/var/log/nginx/
+    container_name: nginx
+  php:
+    build:
+      context: .
+      dockerfile: php/Dockerfile
+    networks:
+      - internal
+    volumes:
+      - ./:/var/www/html/
+      - ./logs/php.log:/var/log/fpm-php.www.log
+    container_name: php
+    expose:
+      - "9000"
+  db-host:
+    container_name: db
+    restart: always
+    image: mysql:5.7
+    platform: linux/x86_64
+    ports:
+     - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: 3drenders
+      MYSQL_USER: 3drenders
+      MYSQL_PASSWORD: root
+    volumes:
+      - ./db-data:/var/lib/mysql
+    networks:
+      - internal
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: pma
+    links:
+      - db-host
+    environment:
+      PMA_HOST: db-host
+      PMA_ARBITRARY: 1
+      MYSQL_USER: 3drenders
+      MYSQL_PASSWORD: root
+      UPLOAD_LIMIT: 200M
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    ports:
+      - 8090:80
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
