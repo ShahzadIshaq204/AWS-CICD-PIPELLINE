@@ -7,6 +7,5 @@ on:
 files:
   - source: /
    destination: /var/www/html/3dRenders2023/
-  
-    command: ["composer", "install"]
+
 
